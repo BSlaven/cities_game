@@ -5,10 +5,14 @@ const Home = () => {
     <main>
       <h1>Dobrodošli u igru država i gradova</h1>
       <h3>Kreirajte novu igru, ili se pridružite postojećoj</h3>
-      <ul>
-        <Link to='/create'>Nova igra</Link>
-        <Link to='/join'>Pridruži se</Link>
-        <Link to='/rules'>Pravila igre</Link>
+      <ul className="list home-list">
+        <Link
+          className="link home-link"
+          to='/create'>Nova igra</Link>
+        <Link 
+          style={{"--localAccent": "rgb(39, 3, 79)"}}
+          className="link home-link" to='/join'>Pridruži se</Link>
+        <Link className="link home-link" to='/rules'>Pravila igre</Link>
       </ul>
     </main>
   )
