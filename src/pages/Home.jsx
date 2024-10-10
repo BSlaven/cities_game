@@ -12,7 +12,7 @@ const Home = () => {
         <Link 
           style={{"--localAccent": "rgb(39, 3, 79)"}}
           className="link home-link" to='/join'>Pridruži se</Link>
-        <Link className="link home-link" to='/rules'>Pravila igre</Link>
+        <Link className="button-29 link home-link" to='/rules'>Pravila igre</Link>
       </ul>
     </main>
   )
