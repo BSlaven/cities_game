@@ -25,11 +25,16 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.home-list {
+/* NAVBAR */
+nav {
+  padding: 0 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 0;
+  color: var(--secondary-accent);
+}
+
+nav ul {
+  margin-left: auto;
 }
 
 .link {
@@ -41,11 +46,30 @@ h3 {
   margin-right: 2rem;
 }
 
+.nav-link:is(:focus, :hover) {
+  text-decoration: underline;
+}
+
+.logo a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--secondary-accent);
+}
+
+/* NAVBAR */
+
+.home-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
 .home-link {
   align-items: center;
   appearance: none;
   margin-bottom: 1rem;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, var(--secondary-accent) 100%);
+  background-image: radial-gradient(100% 100% at 100% 0, var(--primary-accent) 0, var(--secondary-accent) 100%);
   border: 0;
   border-radius: 0.6rem;
   box-shadow: rgba(45, 35, 66, .4) 0 1px 2px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
