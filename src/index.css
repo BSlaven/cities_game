@@ -9,6 +9,22 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 0.5;
+  margin: 4rem 0 2rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
 .home-list {
   display: flex;
   flex-direction: column;
