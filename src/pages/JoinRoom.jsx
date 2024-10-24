@@ -8,6 +8,10 @@ const JoinRoom = () => {
     const roomValue = e.target.value;
     setRoomId(roomValue);
   }
+
+  const submitRoomIdHandler = e => {
+
+  }
   
   return (
     <div className="container">
@@ -17,11 +21,11 @@ const JoinRoom = () => {
         id="room"
         name="room" 
         placeholder="Room number"
-        className="room_number_input"
+        className="room_id_input"
         onChange={roomIdChangeHandler}
         value={roomId}
       />
-      <button className="room_no_btn">Confirm</button>
+      <button className="room_id_btn">Confirm</button>
     </div>
   )
 }
