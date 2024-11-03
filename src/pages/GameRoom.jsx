@@ -1,6 +1,14 @@
+import { useParams } from "react-router-dom";
+
 const GameRoom = () => {
+
+  const { id } = useParams();
+  
   return (
-    <div>GameRoom</div>
+    <>
+      <h1>GameRoom</h1>
+      <h3>{id}</h3>
+    </>
   )
 }
 
