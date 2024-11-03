@@ -18,6 +18,9 @@ const JoinRoom = () => {
       console.log('moraš unijeti id sobe.');
       return;
     };
+
+    // OVDJE TREBA DODATI BACKEND ZA PROVJERU DA LI SOBA POSTOJI
+    // TE AKO POSTOJI TEK ONDA PUSTITI KORISNIKA DA UĐE U TU SOBU
     
     navigate(`/room/${roomId}`);
   }
