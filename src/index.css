@@ -99,3 +99,37 @@ nav ul {
   box-shadow: var(--secondary-accent) 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+/* ENTER ROOM PAGE */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 3rem auto;
+  max-width: 300px;
+  gap: 0.3rem;
+}
+
+.container label {
+  opacity: 0.8;
+}
+
+.room_id_input {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--secondary-accent);
+}
+
+.room_id_btn {
+  border: 2px solid var(--secondary-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-accent);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* ENTER ROOM PAGE */
