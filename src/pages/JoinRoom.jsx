@@ -1,6 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const JoinRoom = () => {
+
+  const navigate = useNavigate();
 
   const [ roomId, setRoomId ] = useState('');
 
@@ -11,6 +14,12 @@ const JoinRoom = () => {
 
   const submitRoomIdHandler = e => {
 
+    if(roomId.length === 0) {
+      console.log('moraš unijeti id sobe.');
+      return;
+    };
+    
+    navigate(`/room/${roomId}`);
   }
   
   return (
@@ -25,7 +34,12 @@ const JoinRoom = () => {
         onChange={roomIdChangeHandler}
         value={roomId}
       />
-      <button className="room_id_btn">Confirm</button>
+      <button 
+        onClick={submitRoomIdHandler}
+        className="room_id_btn"
+      >
+        confirm
+      </button>
     </div>
   )
 }
