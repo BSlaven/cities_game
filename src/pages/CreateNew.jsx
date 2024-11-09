@@ -32,6 +32,14 @@ const CreateNew = () => {
           <input type="radio" name="animals-field" id="animals-field" />
         </div>
       </div>
+      <div className="time-options-container">
+        <h4>Vrijeme po partiji</h4>
+        <select name="time" id="time" className="time-selection">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
     </div>
   )
 }
