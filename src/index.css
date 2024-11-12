@@ -27,10 +27,11 @@ h3 {
 
 /* NAVBAR */
 nav {
-  padding: 0 4rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   color: var(--secondary-accent);
+  width: 100%;
 }
 
 nav ul {
@@ -104,8 +105,8 @@ nav ul {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  margin: 3rem auto;
+  padding: 0 1rem;
+  margin: 1rem auto;
   max-width: 300px;
   gap: 0.3rem;
 }
@@ -133,3 +134,43 @@ nav ul {
   cursor: pointer;
 }
 /* ENTER ROOM PAGE */
+
+/* CREATE ROOM PAGE  */
+.fields-container {
+}
+
+.fields-container h4, .time-options-container h4 {
+  padding: 0;
+  line-height: 0.3;
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 20rem;
+  background:var(--primary-accent);
+  color: var(--secondary-accent);
+  cursor: pointer;
+  padding: 1rem 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.input-container:has(input:checked) {
+  background-color: var(--secondary-accent);
+  color: #fff;
+}
+
+.input-container label {
+  display: inline-block;
+  opacity: 1;
+}
+
+.input-container input {
+  visibility: hidden;
+}
+/* CREATE ROOM PAGE  */
