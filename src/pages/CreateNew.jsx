@@ -1,22 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CreateNew = () => {
   
   const [ selectedFields, setSelectedFields ] = useState([]);
-
-  useEffect(() => {
-    console.log(selectedFields);
-  }, [selectedFields]);
+  const [ timePerField, setTimePerField ] = useState(3);
 
   const fieldCheckHanlder = e => {
     const fieldName = e.target.name;
     if(selectedFields.includes(fieldName)) {
-      console.log('ima ga')
       setSelectedFields(selectedFields.filter(field => field !== fieldName));
       return;
     }
 
     setSelectedFields(prevItems => [ ...prevItems, fieldName ])
+  }
+
+  const timePerFieldHandler = seconds => {
+    setTimePerField(seconds);
   }
   
   return (
@@ -54,11 +54,26 @@ const CreateNew = () => {
       </div>
       <div className="time-options-container">
         <h4>Vrijeme po partiji</h4>
-        <select name="time" id="time" className="time-selection">
-          <option value="3">3</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-        </select>
+        <div className="time-btn-container">
+          <button 
+            onClick={() => setTimePerField(3)}
+            className="time-btn"
+          >
+            3 sekunde
+          </button>
+          <button 
+            onClick={() => setTimePerField(5)}
+            className="time-btn"
+          >
+            5 sekundi
+          </button>
+          <button 
+            onClick={() => setTimePerField(7)}
+            className="time-btn"
+          >
+            7 sekundi
+          </button>
+        </div>
       </div>
     </div>
   )
