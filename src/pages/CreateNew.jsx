@@ -22,7 +22,7 @@ const CreateNew = () => {
   return (
     <div className="container">
       <div className="fields-container">
-        <h4 className="fields-title">Opcije</h4>
+        <h4 className="fields-title">Odaberite polja</h4>
         <div className="input-container">
           <label htmlFor="state-field">Države</label>
           <input onChange={fieldCheckHanlder} type="checkbox" name="state-field" id="state-field" />
