@@ -144,7 +144,6 @@ nav ul {
 }
 
 .input-container {
-  width: 100%;
   max-width: 20rem;
   background:var(--primary-accent);
   color: var(--secondary-accent);
@@ -163,12 +162,14 @@ nav ul {
 }
 
 .input-container label {
-  display: inline-block;
   opacity: 1;
   cursor: pointer;
+  text-align: center;
 }
 
 .input-container input {
-  visibility: hidden;
+  display: none;
 }
+
+
 /* CREATE ROOM PAGE  */
