@@ -136,6 +136,10 @@ nav ul {
 /* ENTER ROOM PAGE */
 
 /* CREATE ROOM PAGE  */
+.fields-container {
+  margin-bottom: 2rem;
+}
+
 .fields-container h4, .time-options-container h4 {
   padding: 0;
   line-height: 0.3;
@@ -154,6 +158,7 @@ nav ul {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  border-radius: 0.4rem;
 }
 
 .input-container:has(input:checked) {
@@ -171,5 +176,19 @@ nav ul {
   display: none;
 }
 
+.time-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.time-btn {
+  background-color: var(--primary-accent);
+  color: var(--secondary-accent);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+}
 /* CREATE ROOM PAGE  */
