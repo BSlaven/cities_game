@@ -182,7 +182,7 @@ nav ul {
 }
 
 .time-btn {
-  background-color: var(--primary-accent);
+  background-color: rgb(209, 209, 255);
   color: var(--secondary-accent);
   font-size: 0.8rem;
   font-weight: bold;
