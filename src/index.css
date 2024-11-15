@@ -136,9 +136,6 @@ nav ul {
 /* ENTER ROOM PAGE */
 
 /* CREATE ROOM PAGE  */
-.fields-container {
-}
-
 .fields-container h4, .time-options-container h4 {
   padding: 0;
   line-height: 0.3;
@@ -168,6 +165,7 @@ nav ul {
 .input-container label {
   display: inline-block;
   opacity: 1;
+  cursor: pointer;
 }
 
 .input-container input {
