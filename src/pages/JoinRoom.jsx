@@ -27,12 +27,12 @@ const JoinRoom = () => {
   
   return (
     <div className="container">
-      <label htmlFor="room">Enter room number</label>
+      <label htmlFor="room">Unesi id sobe</label>
       <input 
         type="text"
         id="room"
         name="room" 
-        placeholder="Room number"
+        placeholder="id sobe"
         className="room_id_input"
         onChange={roomIdChangeHandler}
         value={roomId}
@@ -41,7 +41,7 @@ const JoinRoom = () => {
         onClick={submitRoomIdHandler}
         className="room_id_btn"
       >
-        confirm
+        potvrdi
       </button>
     </div>
   )
