@@ -149,7 +149,7 @@ nav ul {
 
 .input-container {
   max-width: 20rem;
-  background:var(--primary-accent);
+  background: rgb(129, 186, 255);
   color: var(--secondary-accent);
   cursor: pointer;
   padding: 1rem 0.8rem;
