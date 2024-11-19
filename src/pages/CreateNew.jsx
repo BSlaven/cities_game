@@ -14,10 +14,6 @@ const CreateNew = () => {
 
     setSelectedFields(prevItems => [ ...prevItems, fieldName ])
   }
-
-  const timePerFieldHandler = seconds => {
-    setTimePerField(seconds);
-  }
   
   return (
     <div className="container">
