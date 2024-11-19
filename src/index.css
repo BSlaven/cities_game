@@ -190,5 +190,7 @@ nav ul {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 0 rgba(45, 35, 66, .4);
 }
 /* CREATE ROOM PAGE  */

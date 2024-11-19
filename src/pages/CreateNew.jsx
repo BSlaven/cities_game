@@ -49,7 +49,7 @@ const CreateNew = () => {
         </div>
       </div>
       <div className="time-options-container">
-        <h4>Vrijeme po partiji</h4>
+        <h4>Vrijeme po polju</h4>
         <div className="time-btn-container">
           <button 
             onClick={() => setTimePerField(3)}
