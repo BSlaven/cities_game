@@ -179,6 +179,7 @@ nav ul {
 .time-btn-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .time-btn {
@@ -192,5 +193,15 @@ nav ul {
   border-radius: 0.3rem;
   cursor: pointer;
   box-shadow: 1px 1px 3px 0 rgba(45, 35, 66, .4);
+}
+
+.create-btn {
+  border: none;
+  background-color: rgb(40, 1, 1);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 /* CREATE ROOM PAGE  */
