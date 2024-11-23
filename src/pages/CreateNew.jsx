@@ -71,6 +71,7 @@ const CreateNew = () => {
           </button>
         </div>
       </div>
+      <button className="create-btn">Kreiraj</button>
     </div>
   )
 }
