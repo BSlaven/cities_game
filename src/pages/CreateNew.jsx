@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { v4 as uuidv4 } from 'uuid';
+
 const CreateNew = () => {
   
   const [ selectedFields, setSelectedFields ] = useState([]);
@@ -18,7 +20,8 @@ const CreateNew = () => {
   const createRoomClickHandler = () => {
     const newRoom = {
       gameDuration: timePerField * selectedFields.length,
-      fields: selectedFields
+      fields: selectedFields,
+      id: uuidv4()
     }
 
     // TODO: add functionality to send this room to backend
