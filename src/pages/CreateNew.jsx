@@ -14,6 +14,10 @@ const CreateNew = () => {
 
     setSelectedFields(prevItems => [ ...prevItems, fieldName ])
   }
+
+  const createRoomClickHandler = () => {
+    console.log('kreirao si sobu');
+  }
   
   return (
     <div className="container">
@@ -71,7 +75,12 @@ const CreateNew = () => {
           </button>
         </div>
       </div>
-      <button className="create-btn">Kreiraj</button>
+      <button 
+        onClick={createRoomClickHandler}
+        className="create-btn"
+      >
+        Kreiraj
+      </button>
     </div>
   )
 }
