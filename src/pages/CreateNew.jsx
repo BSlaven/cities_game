@@ -16,7 +16,12 @@ const CreateNew = () => {
   }
 
   const createRoomClickHandler = () => {
-    console.log('kreirao si sobu');
+    const newRoom = {
+      gameDuration: timePerField * selectedFields.length,
+      fields: selectedFields
+    }
+
+    // TODO: add functionality to send this room to backend
   }
   
   return (
