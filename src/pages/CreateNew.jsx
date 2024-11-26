@@ -19,7 +19,7 @@ const CreateNew = () => {
   }
 
   const roomIdChangeHandler = e => {
-    value = e.target.value;
+    const value = e.target.value;
     setRoomId(value);
   }
 
@@ -89,7 +89,11 @@ const CreateNew = () => {
           </button>
         </div>
       </div>
-      <input 
+      <label htmlFor="room_id">Unesi ID sobe</label>
+      <input
+        name="room_id"
+        id="room_id"
+        className="room_id_input"
         type="text"
         value={roomId}
         onChange={roomIdChangeHandler}
