@@ -6,6 +6,7 @@ const CreateNew = () => {
   
   const [ selectedFields, setSelectedFields ] = useState([]);
   const [ timePerField, setTimePerField ] = useState(3);
+  const [ roomId, setRoomId ] = useState('');
 
   const fieldCheckHanlder = e => {
     const fieldName = e.target.name;
@@ -15,6 +16,11 @@ const CreateNew = () => {
     }
 
     setSelectedFields(prevItems => [ ...prevItems, fieldName ])
+  }
+
+  const roomIdChangeHandler = e => {
+    const value = e.target.value;
+    setRoomId(value);
   }
 
   const createRoomClickHandler = () => {
@@ -83,12 +89,22 @@ const CreateNew = () => {
           </button>
         </div>
       </div>
+      <label htmlFor="room_id">Unesi ID sobe</label>
+      <input
+        name="room_id"
+        id="room_id"
+        className="room_id_input"
+        type="text"
+        value={roomId}
+        onChange={roomIdChangeHandler}
+        />
       <button 
         onClick={createRoomClickHandler}
         className="create-btn"
       >
         Kreiraj
       </button>
+
     </div>
   )
 }
